@@ -1,0 +1,78 @@
+<!-- <ion-header> -->
+<!-- </ion-header> -->
+
+<ion-content padding class="bgd">
+	<ion-menu [content]="mycontent">
+    		<ion-list>
+    			<div class="bg-slide">
+    				<h2 class="header-slide">Profile</h2>
+	    			<ion-grid>
+	      				<ion-row class="sub-slide">
+	      					<ion-col col-4>
+	      						<img src="./assets/imgs/my.jpg" class="img-rounded">
+		    	  			</ion-col>
+	      					<ion-col col-8 class="tengah">
+	      						<strong>Michael</strong>
+	      						<hr class="garis">
+	      						<small>@michaelme</small>
+	      					</ion-col>
+	      				</ion-row>
+	      			</ion-grid>
+    			</div>
+      			<div class="slide-list">
+		    	  	<h3><ion-icon name="people"></ion-icon>Akun</h3>
+		    	  	<h3><ion-icon name="star"></ion-icon>Pembayaran</h3>
+		    	  	<h3><ion-icon name="settings"></ion-icon>Pengaturan</h3>
+		    	  	<h3><ion-icon name="exit"></ion-icon>Keluar</h3>
+      			</div>
+    		</ion-list>
+		</ion-menu>
+  	<ion-nav #mycontent [root]="rootPage"></ion-nav>
+ 
+	<ion-navbar class="bg-slide">
+    	<ion-title>Galeri Desain</ion-title>
+	</ion-navbar>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<span (click)="detailPage()">
+					<div  class="imglist">
+						<img src="./assets/imgs/list1.jpg" class="imglist">
+					</div>
+				</span>
+			</ion-col>
+			<ion-col col-6>
+				<span (click)="detailPage()">
+					<div  class="imglist">
+						<img src="./assets/imgs/list2.jpg" class="imglist">
+					</div>
+				</span>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-6>
+				<span (click)="detailPage()">
+					<div  class="imglist">
+						<img src="./assets/imgs/list3.jpg" class="imglist">
+					</div>
+				</span>
+			</ion-col>
+			<ion-col col-6>
+				<span (click)="detailPage()">
+					<div  class="imglist">
+						<img src="./assets/imgs/list4.jpg" class="imglist">
+					</div>
+				</span>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col col-12>
+				<span (click)="detailPage()">
+					<div  class="imglist">
+						<img src="./assets/imgs/list5.jpg" class="imglist">
+					</div>
+				</span>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

@@ -1,0 +1,49 @@
+<!--
+Form Pemesanan
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tambah Pesanan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bgglobal">
+  
+  <ion-list>
+  
+    <ion-item>
+      <ion-label color="primary" floating>Nama Lengkap</ion-label>
+      <ion-input type="text" placeholder="Nama Lengkap"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary" floating>No handphone</ion-label>
+      <ion-input type="number" placeholder="No handphone"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary" floating>Alamat</ion-label>
+      <ion-textarea placeholder="Alamat"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  
+  <ion-list radio-group [(ngModel)]="relationship">
+   	<ion-item>
+   	<ion-label color="primary" stacked>Jenis Desain</ion-label>
+  </ion-item>
+    <ion-item>
+      <ion-label>Kaos</ion-label>
+      <ion-radio value="friends" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Poster</ion-label>
+      <ion-radio value="family"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Logo</ion-label>
+      <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+    </ion-item> 
+  </ion-list>
+
+  <button ion-button full round (click)="sendPage()">Kirim</button>
+</ion-content>
